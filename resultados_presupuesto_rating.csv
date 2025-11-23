@@ -1,0 +1,6 @@
+categoria_presupuesto,cantidad_peliculas,rating_promedio,rating_mediano,desviacion_rating,presupuesto_promedio_millones,roi_mediano
+Bajo (<10M),1112,6.28,6.5,1.17,4.36,3.44
+Medio (10-50M),1762,6.2,6.2,0.88,26.85,2.09
+Alto (50-100M),611,6.15,6.1,0.84,72.13,1.99
+Muy Alto (100-500M),279,6.39,6.4,0.75,155.09,2.76
+Blockbuster (>500M),0,0.0,0.0,0.0,0.0,0.0
