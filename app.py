@@ -22,7 +22,7 @@ def cargar_datos_para_api():
 
         # 2. Cargar estadísticas de Presupuesto (Eje 2)
         df_presupuesto = pd.read_csv(RUTA_PRESUPUESTO_RATING) 
-        # Limpieza robusta: reemplaza NaN/Inf por None, que JSON acepta como 'null'.
+        # Reemplaza NaN/Inf por None, que JSON acepta como 'null'.
         df_presupuesto = df_presupuesto.replace([np.inf, -np.inf], np.nan) 
         df_presupuesto_limpio = df_presupuesto.where(pd.notna(df_presupuesto), None) 
         DATA['roi_por_categoria'] = df_presupuesto_limpio.to_dict(orient='records')
